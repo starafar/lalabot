@@ -43,18 +43,17 @@ log.info("Loading events...");
 await Promise.all(
   globbySync("./events/*.js", { cwd: "dist" }).map(
     async (eventFile: string) => {
-      const event: IClientEvent = await import(eventFile);
+      const event = await import(eventFile);
 
       log.debug(
         `Loaded '${event.once ? "once" : "on"}' event '${
           event.event
         }' from [${eventFile}].`
       );
-
       if (event.once) {
         client.once(event.event, (...args) => event.execute(...args));
       } else {
-        client.on(event.event, (...args) => event.execute(...args));
+        client.on(event.event, (...args_1) => event.execute(...args_1));
       }
     }
   )

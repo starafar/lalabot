@@ -1,9 +1,12 @@
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
 node_modules
 
 # Keep environment variables out of version control
 .env
-
-# Editor stuff
-.editorconfig
-.idea
-.vscode

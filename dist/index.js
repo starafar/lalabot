@@ -32,7 +32,7 @@ await Promise.all(globbySync("./events/*.js", { cwd: "dist" }).map(async (eventF
         client.once(event.event, (...args) => event.execute(...args));
     }
     else {
-        client.on(event.event, (...args) => event.execute(...args));
+        client.on(event.event, (...args_1) => event.execute(...args_1));
     }
 }));
 log.info("Loading commands...");
