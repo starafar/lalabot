@@ -5,7 +5,7 @@ export const meta = new SlashCommandBuilder()
   .setDescription("Ping the bot and report latency.");
 
 export async function execute(interaction: ChatInputCommandInteraction) {
-  log.debug("Reached 'ping' command executor function.");
+  log.debug(`Interaction event ${interaction.id} received by '${meta.name}' command executor function.`);
 
   await interaction.reply({
     content: `Pong! Current websocket latency is ${interaction.client.ws.ping} ms.`,
