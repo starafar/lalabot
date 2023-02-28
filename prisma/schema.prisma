@@ -1,0 +1,57 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Character {
+  ls_id    Int    @id
+  owner_id BigInt
+  user     User   @relation(fields: [owner_id], references: [discord_id], onDelete: Cascade)
+  jobs     Job[]
+}
+
+model Job {
+  char_id Int
+  job     JobCode
+  lvl     Int
+  char    Character @relation(fields: [char_id], references: [ls_id], onDelete: Cascade)
+
+  @@id([char_id, job])
+}
+
+model User {
+  discord_id BigInt      @id
+  chars      Character[]
+}
+
+model Event {
+  id       Int      @id @default(autoincrement())
+  start    DateTime
+  duration Int
+}
+
+enum JobCode {
+  PLD
+  WAR
+  DRK
+  GNB
+  WHM
+  SCH
+  AST
+  SGE
+  MNK
+  DRG
+  NIN
+  SAM
+  RPR
+  BRD
+  DNC
+  MCH
+  BLM
+  SMN
+  RDM
+}
