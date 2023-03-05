@@ -28,14 +28,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
-            ["@prisma/client", "virtual:cca55886598c222a17048c796b608cb1d254a162de6b158f17c4f11d139f548bc7b5c49b860b47425e60d40472c35b524b6fa2f8ba60b4cb6d06bd47a007e129#npm:4.11.0"],\
             ["@tsconfig/node-lts-strictest-esm", "npm:18.12.1"],\
             ["@types/node", "npm:18.14.2"],\
             ["discord.js", "npm:14.7.1"],\
             ["dotenv", "npm:16.0.3"],\
+            ["edgedb", "npm:1.1.0"],\
             ["globby", "npm:13.1.3"],\
             ["prettier", "npm:2.8.4"],\
-            ["prisma", "npm:4.11.0"],\
             ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=23ec76"],\
             ["winston", "npm:3.8.2"]\
           ],\
@@ -140,47 +139,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@nodelib/fs.walk", "npm:1.2.8"],\
             ["@nodelib/fs.scandir", "npm:2.1.5"],\
             ["fastq", "npm:1.15.0"]\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
-      ["@prisma/client", [\
-        ["npm:4.11.0", {\
-          "packageLocation": "./.yarn/unplugged/@prisma-client-virtual-ec29a7f618/node_modules/@prisma/client/",\
-          "packageDependencies": [\
-            ["@prisma/client", "npm:4.11.0"]\
-          ],\
-          "linkType": "SOFT"\
-        }],\
-        ["virtual:cca55886598c222a17048c796b608cb1d254a162de6b158f17c4f11d139f548bc7b5c49b860b47425e60d40472c35b524b6fa2f8ba60b4cb6d06bd47a007e129#npm:4.11.0", {\
-          "packageLocation": "./.yarn/unplugged/@prisma-client-virtual-ec29a7f618/node_modules/@prisma/client/",\
-          "packageDependencies": [\
-            ["@prisma/client", "virtual:cca55886598c222a17048c796b608cb1d254a162de6b158f17c4f11d139f548bc7b5c49b860b47425e60d40472c35b524b6fa2f8ba60b4cb6d06bd47a007e129#npm:4.11.0"],\
-            ["@prisma/engines-version", "npm:4.11.0-57.8fde8fef4033376662cad983758335009d522acb"],\
-            ["@types/prisma", null],\
-            ["prisma", "npm:4.11.0"]\
-          ],\
-          "packagePeers": [\
-            "@types/prisma",\
-            "prisma"\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
-      ["@prisma/engines", [\
-        ["npm:4.11.0", {\
-          "packageLocation": "./.yarn/unplugged/@prisma-engines-npm-4.11.0-9458416c54/node_modules/@prisma/engines/",\
-          "packageDependencies": [\
-            ["@prisma/engines", "npm:4.11.0"]\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
-      ["@prisma/engines-version", [\
-        ["npm:4.11.0-57.8fde8fef4033376662cad983758335009d522acb", {\
-          "packageLocation": "./.yarn/cache/@prisma-engines-version-npm-4.11.0-57.8fde8fef4033376662cad983758335009d522acb-815118988f-f040b93d09.zip/node_modules/@prisma/engines-version/",\
-          "packageDependencies": [\
-            ["@prisma/engines-version", "npm:4.11.0-57.8fde8fef4033376662cad983758335009d522acb"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -397,6 +355,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["edgedb", [\
+        ["npm:1.1.0", {\
+          "packageLocation": "./.yarn/cache/edgedb-npm-1.1.0-0984669206-ee760aaf1e.zip/node_modules/edgedb/",\
+          "packageDependencies": [\
+            ["edgedb", "npm:1.1.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["enabled", [\
         ["npm:2.0.0", {\
           "packageLocation": "./.yarn/cache/enabled-npm-2.0.0-bf5d96c9d8-9d256d89f4.zip/node_modules/enabled/",\
@@ -590,14 +557,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["lalabot", "workspace:."],\
-            ["@prisma/client", "virtual:cca55886598c222a17048c796b608cb1d254a162de6b158f17c4f11d139f548bc7b5c49b860b47425e60d40472c35b524b6fa2f8ba60b4cb6d06bd47a007e129#npm:4.11.0"],\
             ["@tsconfig/node-lts-strictest-esm", "npm:18.12.1"],\
             ["@types/node", "npm:18.14.2"],\
             ["discord.js", "npm:14.7.1"],\
             ["dotenv", "npm:16.0.3"],\
+            ["edgedb", "npm:1.1.0"],\
             ["globby", "npm:13.1.3"],\
             ["prettier", "npm:2.8.4"],\
-            ["prisma", "npm:4.11.0"],\
             ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=23ec76"],\
             ["winston", "npm:3.8.2"]\
           ],\
@@ -708,16 +674,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/prettier-npm-2.8.4-ba64a351d1-c173064bf3.zip/node_modules/prettier/",\
           "packageDependencies": [\
             ["prettier", "npm:2.8.4"]\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
-      ["prisma", [\
-        ["npm:4.11.0", {\
-          "packageLocation": "./.yarn/unplugged/prisma-npm-4.11.0-5f8635d1be/node_modules/prisma/",\
-          "packageDependencies": [\
-            ["prisma", "npm:4.11.0"],\
-            ["@prisma/engines", "npm:4.11.0"]\
           ],\
           "linkType": "HARD"\
         }]\
