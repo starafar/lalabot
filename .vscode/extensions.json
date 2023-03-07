@@ -1,6 +1,7 @@
 {
   "recommendations": [
     "arcanis.vscode-zipfs",
+    "ms-vscode.vscode-typescript-next",
     "esbenp.prettier-vscode"
   ]
 }
