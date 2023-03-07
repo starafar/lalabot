@@ -36,7 +36,7 @@ module default {
         multi link attending -> Registration;
     }
 
-    scalar type Job extending enum<"PLD","WAR","GNB","DRK">;
+    scalar type Job extending enum<"PLD","WAR","GNB","DRK","WHM","SCH","AST","SGE","MNK","DRG","NIN","SAM","RPR","BRD","MCH","DNC","BLM","SMN","RDM">;
 
     type Registration {
         required link character -> Character;
