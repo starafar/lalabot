@@ -154,4 +154,6 @@ async function createEvent(interaction: ChatInputCommandInteraction) {
   const ranged: number | null = interaction.options.getInteger("ranged");
   const casters: number | null = interaction.options.getInteger("casters");
   const open: number | null = interaction.options.getInteger("open");
+
+  
 }
